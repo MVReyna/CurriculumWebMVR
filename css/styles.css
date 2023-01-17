@@ -76,10 +76,12 @@ h2,
 h3 {
     display: inline;
     color: white;
+    justify-content: center;
+    display: flex;
 }
 
 
-/*seccion footer*/
+/*sección footer*/
 
 footer {
     padding: 2.5em;
