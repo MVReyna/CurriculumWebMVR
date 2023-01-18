@@ -80,6 +80,20 @@ h3 {
     display: flex;
 }
 
+.card {
+    width: 60%;
+    color: black;
+    background-color: bisque;
+}
+
+.progress {
+    width: 100%;
+    font-family: lucida;
+    font-size: 25px;
+    font-style: italic;
+    font-size-adjust: 100;
+}
+
 
 /*sección footer*/
 
@@ -90,4 +104,37 @@ footer {
     border-bottom: 2px solid grey;
     justify-content: center;
     display: flex;
+}
+
+
+/*estilos modal*/
+
+.modal-container {
+    display: flex;
+    background-color: antiquewhite;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vh;
+    transition: opacity 0.3s ease;
+}
+
+.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal {
+    background-color: #fff;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }

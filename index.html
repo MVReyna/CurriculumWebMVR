@@ -32,20 +32,25 @@
             </div>
             <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
                 <p id="nombre">María Victoria Reyna</p>
-                <p>Profesora en Ciencias Naturales- Licenciada en Biología</p>
+                <p>Front End Developer Jr</p>
+                <p>Profesora de Ciencias Naturales de Nivel Secundario</p>
+
             </div>
             <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
                 <span>
-            <h1>Acerca de Mí</h1>
+            <h1>Acerca de Mí</h1>  
             <p>En la actualidad, soy profesora de Ciencias Naturales de nivel secundario. Siempre me interesó la computación y todo lo relacionado con ella. Situación que me permitió estudiar un curso introductorio de Robótica para aplicar en las escuelas e ir más allá y realizar cursos de programación impartidos por el Gobierno Nacional. Pienso que la competencias digitales son el futuro en la educación y que no puedo ser indiferente a ellas. Por ello, la programación es una gran puerta de entrada a la educación del siglo XXI y, por supuesto, un enorme desafió para carrera profesional.
             </p>
           </span>
             </div>
+
     </section>
     <Section id="educacion">
         <div class="b-example-divider"></div>
         <Div>
-            <h1>Educación</h1>
+            <div class="container p-1 my-1 bg-dark text-white">
+                <h1>Educación</h1>
+            </div>
             <div class="container p-1 my-1 bg-dark text-white">
                 <h2>Educación Profesional</h2>
 
@@ -99,6 +104,7 @@
     <section id="expLab">
         <div class="container p-1 my-1 bg-dark text-white">
             <h1>Experiencia Laboral</h1>
+            <!--
             <div class="col-lg-12" id="divTable">
                 <table>
                     <thead>
@@ -113,7 +119,8 @@
                                 <h5>Año</h5>
                             </th>
                             <th>
-                                <h5>Mas info</h5>
+                                <h5>
+                                </h5>
                             </th>
                         </tr>
                     </thead>
@@ -121,11 +128,126 @@
                     </tbody>
                 </table>
             </Div>
+        -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="card" style="width: 100%;">
+                        <div class="card-body" id="divTable">
+                            <table>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tbody id="tbodyExp1">
+                                </tbody>
+                            </table>
+                            <!--Agregamos modal-->
+                            <button type="button" class="btn btn-primary" id="open">Más Info</button>
+                        </div>
+                    </div>
+
+                    <div id="modal_container1" class="modal-container">
+                        <div class="modal">
+                            <h1>Más Información</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nihil reprehenderit, ipsum aut obcaecati eius sunt ut soluta perspiciatis possimus rerum facilis quis praesentium illum exercitationem labore unde vitae earum!
+                            </p>
+                            <button class="btn btn-close" id="close">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="card" style="width: 100%;">
+                        <div class="card-body" id="divTable">
+                            <table>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr></tr>
+
+                                <tbody id="tbodyExp2">
+                                </tbody>
+                            </table>
+                            <!--Agregamos modal-->
+                            <button type="button" class="btn btn-primary" id="open">Más Info</button>
+                        </div>
+                    </div>
+
+                    <div id="modal_container1" class="modal-container">
+                        <div class="modal">
+                            <h1>Más Información</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nihil reprehenderit, ipsum aut obcaecati eius sunt ut soluta perspiciatis possimus rerum facilis quis praesentium illum exercitationem labore unde vitae earum!
+                            </p>
+                            <button class="btn btn-close" id="close">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="card" style="width: 100%;">
+                        <div class="card-body" id="divTable">
+                            <table>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr></tr>
+
+                                <tbody id="tbodyExp3">
+                                </tbody>
+                            </table>
+                            <!--Agregamos modal-->
+                            <button type="button" class="btn btn-primary" id="open">Más Info</button>
+                        </div>
+                    </div>
+
+                    <div id="modal_container1" class="modal-container">
+                        <div class="modal">
+                            <h1>Más Información</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nihil reprehenderit, ipsum aut obcaecati eius sunt ut soluta perspiciatis possimus rerum facilis quis praesentium illum exercitationem labore unde vitae earum!
+                            </p>
+                            <button class="btn btn-close" id="close">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </Div>
+    </section>
+    <section id="skills">
+        <div class="container p-1 my-1 bg-dark text-white">
+            <h1>Skills</h1>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="card" style="width: 100%;">
+                        <div class="card-body">
+                            <h3>Idiomas</h3>
+                            <h5>Inglés</h5>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                            </div>
+                            <h5>Italiano</h5>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="card" style="width: 100%;">
+                        <div class="card-body">
+                            <h3>Hard & Soft Skils</h3>
+                            <h5>Inglés</h5>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                            </div>
+                            <h5>Italiano</h5>
+                            <div class="progress">
+
+                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <footer>
         <p class="footer__text">
-            © 2023 María Victoria Reyna
-        </p>
+            © 2023 María Victoria Reyna - Arcochinga, Córdoba, Argentina</p>
     </footer>
     <script src="js/educacion.js" type="text/javascript"></script>
     <script src="js/experiencia.js" type="text/javascript"></script>

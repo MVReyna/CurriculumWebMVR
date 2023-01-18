@@ -1,8 +1,8 @@
-let expLab = [{
+/**
+ * const expLab = [{
         nombre: 'Profesora de nivel Secundario de  Ciencias Naturales y afines',
         descripcion: '(Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem voluptatem placeat veritatis, saepe laudantium ipsum accusantium beatae nesciunt vel cum quas, doloribus dolores illo facilis ipsa nulla? Fugiat, dolorem?)',
-        año: '(2012 al presente)',
-        masInfo: '<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Open modal</button>'
+        año: '(2012 al presente)'
     },
     {
         nombre: 'Asistente de Investigación',
@@ -31,9 +31,66 @@ for (let i = 0; i < expLab.length; i++) {
     console.log(expLab);
 }
 
-//Arreglo para la Info extra // 
 
-const myModal = [{
+ */
+
+
+// segunda opción para agregar experiencias
+
+const expLab1 = [{
+    nombre: 'Profesora de nivel Secundario de  Ciencias Naturales y afines',
+    descripcion: '(Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem voluptatem placeat veritatis, saepe laudantium ipsum accusantium beatae nesciunt vel cum quas, doloribus dolores illo facilis ipsa nulla? Fugiat, dolorem?)',
+    año: '(2012 al presente)'
+}];
+const expLab2 = [{
+    nombre: 'Asistente de Investigación',
+    descripcion: '(Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem voluptatem placeat veritatis, saepe laudantium ipsum accusantium beatae nesciunt vel cum quas, doloribus dolores illo facilis ipsa nulla? Fugiat, dolorem?)',
+    año: '(2004 - 2010)',
+}];
+
+const expLab3 = [{
+    nombre: 'Experiencia 3',
+    descripcion: '(Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem voluptatem placeat veritatis, saepe laudantium ipsum accusantium beatae nesciunt vel cum quas, doloribus dolores illo facilis ipsa nulla? Fugiat, dolorem?)',
+    año: '(2012 al presente)'
+}];
+
+let tableBodyExp1 = document.getElementById('tbodyExp1');
+
+for (let i = 0; i < expLab1.length; i++) {
+    let name = `<tr><h4>${expLab1[i].nombre}</h4></tr>`;
+    let description = `<tr><p> ${expLab1[i].descripcion}</p></tr>`;
+    let year = `<tr><h6>${expLab1[i].año}</h6></tr>`;
+
+    tableBodyExp1.innerHTML += `${name + description + year}`;
+
+}
+
+let tableBodyExp2 = document.getElementById('tbodyExp2');
+
+for (let i = 0; i < expLab2.length; i++) {
+    let name = `<tr><h4>${expLab2[i].nombre}</h4></tr>`;
+    let description = `<tr><p> ${expLab2[i].descripcion}</p></tr>`;
+    let year = `<tr><h6>${expLab2[i].año}</h6></tr>`;
+
+    tableBodyExp2.innerHTML += `${name + description + year}`;
+
+}
+
+let tableBodyExp3 = document.getElementById('tbodyExp3');
+
+for (let i = 0; i < expLab3.length; i++) {
+    let name = `<tr><h4>${expLab3[i].nombre}</h4></tr>`;
+    let description = `<tr><p> ${expLab3[i].descripcion}</p></tr>`;
+    let year = `<tr><h6>${expLab3[i].año}</h6></tr>`;
+
+    tableBodyExp3.innerHTML += `${name + description + year}`;
+
+}
+
+
+//Info extra // 
+
+const masInfo1 = [{
         nombre: 'Profesora de nivel Secundario de  Ciencias Naturales y afines',
         descripcion: '(Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem voluptatem placeat veritatis, saepe laudantium ipsum accusantium beatae nesciunt vel cum quas, doloribus dolores illo facilis ipsa nulla? Fugiat, dolorem?)',
         año: '(2012 al presente)'
@@ -49,6 +106,34 @@ const myModal = [{
         año: '(2012 al presente)'
     }
 ]
+
+
+const open = document.getElementById('open');
+const modal_container1 = document.getElementById('modal_container1');
+const close = document.getElementById('close');
+
+open.addEventListener('click', () => {
+    modal_container1.classList.add('show');
+    alert("abre");
+});
+
+close.addEventListener('click', () => {
+    modal_container1.classList.remove('show');
+    alert("cierra");
+});
+
+
+
+/**
+for (let i = 0; i < masInfo1.length; i++) {
+    let name = `<tr><h4>${masInfo1[i].nombre}</h4></tr>`;
+    let description = `<tr><p> ${masInfo1[i].descripcion}</p></tr>`;
+    let year = `<tr><h6>${masInfo1[i].año}</h6></tr>`;
+
+};
+*/
+
+
 
 /**
 let btnModal = document.getElementById('tbodyMas');
