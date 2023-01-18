@@ -63,5 +63,5 @@ document.getElementById('cursos').innerHTML = "<table><tr><td><h5> Profesora Niv
 <tr><td><h5> Licenciada en Cs Biológicas</h5></td><td><p>Obtenido en la Universidad Nacional de la Patagonia San Juan Bosco, sede Puerto Madryn, Chubut -Argentina</p></td><td><h6>(2004)</h6></td></tr>\
 </table>";
 */
-console.log(edu);
-console.log(cursos);
+console.log(educ);
+console.log(curso);
