@@ -1,17 +1,17 @@
 const educ = [{
-        nombre: 'Licenciada en Cs Biológicas',
-        descripcion: '(Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem voluptatem placeat veritatis, saepe laudantium ipsum accusantium beatae nesciunt vel cum quas, doloribus dolores illo facilis ipsa nulla? Fugiat, dolorem?)',
-        año: '(2004)'
+        nombre: 'Profesorado de Educación Secundaria en Biología en concurrencia con el título de base',
+        descripcion: 'Otorgado por el Instituto Superior de Estudios Pedagógicos (ISEP), Ministerio de Educación Gobierno de Córdoba, Argentina.',
+        año: '(2018-2020)'
     },
     {
-        nombre: 'Profesora Nivel Secundario de Biología',
-        descripcion: '(Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem voluptatem placeat veritatis, saepe laudantium ipsum accusantium beatae nesciunt vel cum quas, doloribus dolores illo facilis ipsa nulla? Fugiat, dolorem?)',
-        año: '(2020)'
+        nombre: 'Magister en Ciencias Biológicas mención Ecología',
+        descripcion: 'Otorgado por la Pontificia Universidad Católica de Chile, Santiago de Chile, Chile.',
+        año: '(2006-2008)'
     },
     {
-        nombre: 'Master en Cs Biológicas mención Ecología',
-        descripcion: '(Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem voluptatem placeat veritatis, saepe laudantium ipsum accusantium beatae nesciunt vel cum quas, doloribus dolores illo facilis ipsa nulla? Fugiat, dolorem?)',
-        año: '(2008)'
+        nombre: 'Licenciada en Ciencias Biológicas',
+        descripcion: 'Otorgado por la Universidad Nacional de la  Patagonia “San Juan Bosco”, Puerto Madryn, Chubut, Argentina. Registro DGEM: R-13034, Registro Titulo DGEM: 309730',
+        año: '(1997-2004)'
     }
 ];
 
@@ -26,19 +26,19 @@ for (let i = 0; i < educ.length; i++) {
 }
 
 const curso = [{
-        nombre: 'Licenciada en Cs Biológicas',
-        descripcion: '(Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem voluptatem placeat veritatis, saepe laudantium ipsum accusantium beatae nesciunt vel cum quas, doloribus dolores illo facilis ipsa nulla? Fugiat, dolorem?)',
-        año: '(2004)'
+        nombre: 'Profesorado de Educación Secundaria en Biología en concurrencia con el título de base',
+        descripcion: 'Otorgado por el Instituto Superior de Estudios Pedagógicos (ISEP), Ministerio de Educación Gobierno de Córdoba, Argentina.',
+        año: '(2018-2020)'
     },
     {
-        nombre: 'Profesora Nivel Secundario de Biología',
-        descripcion: '(Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem voluptatem placeat veritatis, saepe laudantium ipsum accusantium beatae nesciunt vel cum quas, doloribus dolores illo facilis ipsa nulla? Fugiat, dolorem?)',
-        año: '(2020)'
+        nombre: 'Magister en Ciencias Biológicas mención Ecología',
+        descripcion: 'Otorgado por la Pontificia Universidad Católica de Chile, Santiago de Chile, Chile.',
+        año: '(2006-2008)'
     },
     {
-        nombre: 'Master en Cs Biológicas mención Ecología',
-        descripcion: '(Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem voluptatem placeat veritatis, saepe laudantium ipsum accusantium beatae nesciunt vel cum quas, doloribus dolores illo facilis ipsa nulla? Fugiat, dolorem?)',
-        año: '(2008)'
+        nombre: 'Licenciada en Ciencias Biológicas',
+        descripcion: 'Otorgado por la Universidad Nacional de la  Patagonia “San Juan Bosco”, Puerto Madryn, Chubut, Argentina. Registro DGEM: R-13034, Registro Titulo DGEM: 309730',
+        año: '(1997-2004)'
     }
 ];
 
