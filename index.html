@@ -140,17 +140,10 @@
                                 <tbody id="tbodyExp1">
                                 </tbody>
                             </table>
-                            <!--Agregamos modal-->
-                            <button type="button" class="btn btn-primary" id="open">Más Info</button>
-                        </div>
-                    </div>
-
-                    <div id="modal_container1" class="modal-container">
-                        <div class="modal">
-                            <h1>Más Información</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nihil reprehenderit, ipsum aut obcaecati eius sunt ut soluta perspiciatis possimus rerum facilis quis praesentium illum exercitationem labore unde vitae earum!
-                            </p>
-                            <button class="btn btn-close" id="close">Cerrar</button>
+                            <!--Agregamos botón modal-->
+                            <div class="container">
+                                <button class="btn" data-target="#modal1">Más Info</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -165,18 +158,41 @@
                                 <tbody id="tbodyExp2">
                                 </tbody>
                             </table>
-                            <!--Agregamos modal-->
-                            <button type="button" class="btn btn-primary" id="open">Más Info</button>
+                            <!--Agregamos botón modal-->
+                            <div class="container">
+                                <button class="btn" data-target="#modal2">Más Info</button>
+                            </div>
                         </div>
-                    </div>
+                        <!--Textos modales sección experiencia
+                            <div id="modal_container2" class="modal-container">
+                                <div class="modal">
+                                    <div class="card-body" id="divTable">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        <h5>Cargo desempeñado</h5>
+                                                    </th>
+                                                    <th>
+                                                        <h5>Descripción</h5>
+                                                    </th>
+                                                    <th>
+                                                        <h5>Año</h5>
+                                                    </th>
+                                                    <th>
+                                                        <h5>
+                                                        </h5>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="masInfo2">
+                                            </tbody>
+                                        </table>
 
-                    <div id="modal_container1" class="modal-container">
-                        <div class="modal">
-                            <h1>Más Información</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nihil reprehenderit, ipsum aut obcaecati eius sunt ut soluta perspiciatis possimus rerum facilis quis praesentium illum exercitationem labore unde vitae earum!
-                            </p>
-                            <button class="btn btn-close" id="close">Cerrar</button>
-                        </div>
+                                        <button class="btn btn-close" id="close">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>-->
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
@@ -190,17 +206,10 @@
                                 <tbody id="tbodyExp3">
                                 </tbody>
                             </table>
-                            <!--Agregamos modal-->
-                            <button type="button" class="btn btn-primary" id="open">Más Info</button>
-                        </div>
-                    </div>
-
-                    <div id="modal_container1" class="modal-container">
-                        <div class="modal">
-                            <h1>Más Información</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nihil reprehenderit, ipsum aut obcaecati eius sunt ut soluta perspiciatis possimus rerum facilis quis praesentium illum exercitationem labore unde vitae earum!
-                            </p>
-                            <button class="btn btn-close" id="close">Cerrar</button>
+                            <!--Agregamos botón modal-->
+                            <div class="container">
+                                <button class="btn" data-target="#modal1">Más Info</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -247,8 +256,89 @@
     </section>
     <footer>
         <p class="footer__text">
-            © 2023 María Victoria Reyna - Arcochinga, Córdoba, Argentina</p>
+            © 2023 María Victoria Reyna - Ascochinga, Córdoba, Argentina</p>
     </footer>
+    <!--Agregamos Info modales-->
+    <div class="modal" id="modal1">
+        <div class="header">
+            <div class="title">
+                <h3>Profesor de Ciencias Naturales y Afines de Nivel Secundario</h3>
+            </div>
+            <button class="btn close-modal">&times;</button>
+        </div>
+        <div class="body" id="divTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <h5>Cargo desempeñado</h5>
+                        </th>
+                        <th>
+                            <h5>Descripción</h5>
+                        </th>
+                        <th>
+                            <h5>Año</h5>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="masInfo1">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="modal" id="modal2">
+        <div class="header">
+            <div class="title">Más Info</div>
+            <button class="btn close-modal">&times;</button>
+        </div>
+        <div class="body" id="divTable">
+            <h3>Ayudante de cátedra/ Profesor Invitado Nivel Universitario</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <h5>Cargo desempeñado</h5>
+                        </th>
+                        <th>
+                            <h5>Descripción</h5>
+                        </th>
+                        <th>
+                            <h5>Año</h5>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="masInfo2">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="modal" id="modal3">
+        <div class="header">
+            <div class="title">Más Info</div>
+            <button class="btn close-modal">&times;</button>
+        </div>
+        <div class="body" id="divTable">
+            <h3>Profesor de Ciencias Naturales y Afines de Nivel Secundario</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <h5>Cargo desempeñado</h5>
+                        </th>
+                        <th>
+                            <h5>Descripción</h5>
+                        </th>
+                        <th>
+                            <h5>Año</h5>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="masInfo3">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="overlay"></div>
     <script src="js/educacion.js" type="text/javascript"></script>
     <script src="js/experiencia.js" type="text/javascript"></script>
 </body>
