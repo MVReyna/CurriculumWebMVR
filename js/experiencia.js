@@ -202,7 +202,7 @@ close_modals.forEach((btn) => {
 window.onclick = (event) => {
     if (event.target == overlay) {
         const modals = document.querySelectorAll(".modal");
-        modals.forEach((modal) => modal.classList.remove("active"));
-        overlay.classList.remove("active");
+        /* modals.forEach((modal) => modal.classList.remove("active"));
+         overlay.classList.remove("active");*/
     }
 };

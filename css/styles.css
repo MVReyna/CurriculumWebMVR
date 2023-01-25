@@ -16,7 +16,7 @@ section {
     background-color: rgb(155, 155, 148);
 }
 
-div {
+.col-xs-12 {
     background-color: rgb(155, 155, 148);
 }
 
@@ -38,9 +38,9 @@ div {
 }
 
 
-/*estilo de la foto de perfil*/
+/*estilo de la foto de perfil - responsive*/
 
-@media(min-width:576px) {
+@media(min-width:769px) {
     #fotoperfil {
         position: absolute;
         width: 15%;
@@ -51,7 +51,7 @@ div {
     }
 }
 
-@media(max-width:575px) {
+@media(max-width:768px) {
     #fotoperfil {
         position: absolute;
         width: 15%;
@@ -85,8 +85,18 @@ h3 {
     color: black;
     background-color: rgb(155, 155, 148);
     border: radius 10px solid;
-    border-color: black;
+    border-color: transparent;
+    padding: 0.5%;
+    margin-top: .5%;
+    margin-bottom: 1.5%;
 }
+
+.card-body {
+    background-color: rgb(155, 155, 148);
+}
+
+
+/*Progress Bar and Circle*/
 
 .progress {
     width: 100%;
@@ -94,6 +104,182 @@ h3 {
     font-size: 25px;
     font-style: italic;
     font-size-adjust: 100;
+}
+
+.porcentaje {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 26vh;
+}
+
+.container-circle {
+    position: relative;
+    width: 70px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.container-circle .card-circle {
+    position: relative;
+    width: 100px;
+    background-color: rgb(155, 155, 148);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+    margin-top: 1px;
+    margin-right: 15px
+}
+
+.container-circle .card-circle:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.container-circle .card-circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50;
+    width: 100%;
+    height: 100%;
+    background: rgb(155, 155, 148);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.porcent {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #fff;
+    background: rgb(255, 255, 255);
+    z-index: 1000;
+}
+
+.porcent .number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.porcent .number h2 {
+    color: #000;
+    font-weight: 70;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.card-circle:hover .porcent .number h2 {
+    color: rgb(0, 0, 0);
+    font-size: 33px;
+}
+
+.porcent .number h2 span {
+    color: rgb(0, 0, 0);
+}
+
+.text {
+    position: relative;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+svg {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-85deg)!important;
+}
+
+svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #c9ddfc;
+    stroke-width: 10;
+    stroke-linecap: round !important;
+    transform: translate(5px, 5px);
+}
+
+
+/*Calculo para simular el porcent*/
+
+svg circle:nth-child(2) {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.card-circle:nth-child(1) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 35)/100);
+    stroke: #0d6efd;
+}
+
+.card-circle:nth-child(2) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 35)/100);
+    stroke: #0d6efd;
+}
+
+.card-circle:nth-child(3) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 30)/100);
+    stroke: #0d6efd;
+}
+
+.card-circle:nth-child(4) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 85)/100);
+    stroke: #0d6efd;
+}
+
+.card-circle:nth-child(5) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 85)/100);
+    stroke: #0d6efd;
+}
+
+.card-circle:nth-child(6) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 75)/100);
+    stroke: #0d6efd;
+}
+
+
+/* MOdificando sección skills para ser Responsive*/
+
+@media screen and(max-width: 1068px) {
+    .container-circle {
+        max-width: 80rem;
+        min-width: 70rem;
+    }
+}
+
+@media screen and (max-width: 868px) {
+    .container {
+        max-width: 80rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 2.5rem;
+        flex-direction: column;
+        margin-top: 20px;
+    }
 }
 
 
@@ -114,6 +300,7 @@ footer {
 .container {
     width: 992px;
     margin: 0 auto;
+    background-color: rgb(155, 155, 148);
 }
 
 .btn {
@@ -189,58 +376,3 @@ footer {
 #overlay.active {
     display: block;
 }
-
-
-/*
-.modal-container {
-    display: fixed;
-    background-color: rgb(224, 217, 209);
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    pointer-events: none;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    transition: opacity 0.3s ease;
-    overflow: auto;
-}
-
-.show {
-    pointer-events: auto;
-    opacity: 1;
-}
-
-.modal {
-    background-color: #fff;
-    width: 600px;
-    max-width: 100%;
-    padding: 30px 50px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    overflow: auto;
-}
-
-.close {
-    background: #606061;
-    color: #FFFFFF;
-    line-height: 25px;
-    position: absolute;
-    right: -12px;
-    text-align: center;
-    top: -10px;
-    width: 24px;
-    text-decoration: none;
-    font-weight: bold;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;
-    -moz-box-shadow: 1px 1px 3px #000;
-    -webkit-box-shadow: 1px 1px 3px #000;
-    box-shadow: 1px 1px 3px #000;
-}
-
-*/

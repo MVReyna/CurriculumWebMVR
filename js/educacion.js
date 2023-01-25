@@ -26,9 +26,9 @@ for (let i = 0; i < educ.length; i++) {
 }
 
 const curso = [{
-        nombre: 'Profesorado de Educación Secundaria en Biología en concurrencia con el título de base',
-        descripcion: 'Otorgado por el Instituto Superior de Estudios Pedagógicos (ISEP), Ministerio de Educación Gobierno de Córdoba, Argentina.',
-        año: '(2018-2020)'
+        nombre: 'Curso de Especialización en Criminalística y Actividades Periciales',
+        descripcion: 'Dictado por la Facultad de Matemática, Astronomía y Física. Universidad Nacional de Córdoba- Córdoba, Argentina. ',
+        año: '(2016-al presente)'
     },
     {
         nombre: 'Magister en Ciencias Biológicas mención Ecología',
