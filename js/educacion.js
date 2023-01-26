@@ -18,9 +18,9 @@ const educ = [{
 let tableBody = document.getElementById('tbodyA');
 
 for (let i = 0; i < educ.length; i++) {
-    let name = `<td>${educ[i].nombre}</td>`;
-    let description = `<td>${educ[i].descripcion}</td>`;
-    let year = `<td>${educ[i].año}</td>`;
+    let name = `<td><h5>${educ[i].nombre}</h5></td>`;
+    let description = `<td><p>${educ[i].descripcion}</p></td>`;
+    let year = `<td><h6>${educ[i].año}</h6></td>`;
 
     tableBody.innerHTML += `<tr>${name + description + year}</tr>`;
 }
@@ -31,37 +31,36 @@ const curso = [{
         año: '(2016-al presente)'
     },
     {
-        nombre: 'Magister en Ciencias Biológicas mención Ecología',
-        descripcion: 'Otorgado por la Pontificia Universidad Católica de Chile, Santiago de Chile, Chile.',
-        año: '(2006-2008)'
+        nombre: 'Curso Argentina Programa: #SéProgramar- Primera Etapa',
+        descripcion: 'Ministerio de Desarrollo Productivo, Argentina. Situación: APROBADO',
+        año: '(2021)'
     },
     {
-        nombre: 'Licenciada en Ciencias Biológicas',
-        descripcion: 'Otorgado por la Universidad Nacional de la  Patagonia “San Juan Bosco”, Puerto Madryn, Chubut, Argentina. Registro DGEM: R-13034, Registro Titulo DGEM: 309730',
-        año: '(1997-2004)'
+        nombre: 'Curso Argentina Programa: #YoProgramo- Segunda Edición',
+        descripcion: 'Ministerio de Desarrollo Productivo, Argentina. Situación: CURSADO- Calificación 848.81',
+        año: '(2022)'
+    },
+    {
+        nombre: 'Seminario de “Robótica”',
+        descripcion: 'Universidad Popular de la localidad de Colonia Caroya y por la Universidad Tecnológica Nacional- Facultad Regional Córdoba. Situación: APROBADO',
+        año: '(2019)'
+    },
+    {
+        nombre: 'Taller para Docentes de Ciencias Naturales de Nivel Medio “Utilización de aplicaciones hipermedia para el aprendizaje de la biología celular”',
+        descripcion: 'Facultad de Ciencias Agropecuarias, Universidad Nacional de Córdoba, Córdoba, Argentina.',
+        año: '(2014)'
     }
 ];
 
 let tableBodyB = document.getElementById('tbodyB');
 
 for (let i = 0; i < curso.length; i++) {
-    let name = `<td>${curso[i].nombre}</td>`;
-    let description = `<td>${curso[i].descripcion}</td>`;
-    let year = `<td>${curso[i].año}</td>`;
+    let name = `<td><h6>${curso[i].nombre}</h6></td>`;
+    let description = `<td><p>${curso[i].descripcion}</p></td>`;
+    let year = `<td><h6>${curso[i].año}</h6></td>`;
 
     tableBodyB.innerHTML += `<tr>${name + description + year}</tr>`;
 }
 
-/**
-document.getElementById('edu').innerHTML = "<table><tr><td><h5> Profesora Nivel Secundario de Biología</h5></td><td><p>Otorgado por el ISEP, Córdoba -Argentina</p></td><td><h6>(2020)</h6></td></tr>\
-<tr><td><h5> Master en Cs Biológicas mención Ecología</h5></td><td><p>Otorgado por la Universidad Católica de Chile, Santiago de Chile -Chile</p></td><td><h6>(2008)</h6></td></tr>\
-<tr><td><h5> Licenciada en Cs Biológicas</h5></td><td><p>Obtenido en la Universidad Nacional de la Patagonia San Juan Bosco, sede Puerto Madryn, Chubut -Argentina</p></td><td><h6>(2004)</h6></td></tr>\
-</table>";
-
-document.getElementById('cursos').innerHTML = "<table><tr><td><h5> Profesora Nivel Secundario de Biología</h5></td><td><p>Otorgado por el ISEP, Córdoba -Argentina</p></td><td><h6>(2020)</h6></td></tr>\
-<tr><td><h5> Master en Cs Biológicas mención Ecología</h5></td><td><p>Otorgado por la Universidad Católica de Chile, Santiago de Chile -Chile</p></td><td><h6>(2008)</h6></td></tr>\
-<tr><td><h5> Licenciada en Cs Biológicas</h5></td><td><p>Obtenido en la Universidad Nacional de la Patagonia San Juan Bosco, sede Puerto Madryn, Chubut -Argentina</p></td><td><h6>(2004)</h6></td></tr>\
-</table>";
-*/
 console.log(educ);
 console.log(curso);

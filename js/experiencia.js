@@ -39,19 +39,19 @@ for (let i = 0; i < expLab.length; i++) {
 
 const expLab1 = [{
     nombre: 'Profesora de nivel Secundario de  Ciencias Naturales y afines',
-    descripcion: '(Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem voluptatem placeat veritatis, saepe laudantium ipsum accusantium beatae nesciunt vel cum quas, doloribus dolores illo facilis ipsa nulla? Fugiat, dolorem?)',
+    descripcion: 'Dicto clases de Ciencias Naturales y afines en diversas escuelas secundarias de la Provincia de Córdoba, Argentina',
     año: '(2012 al presente)'
 }];
 const expLab2 = [{
-    nombre: 'Asistente de Investigación',
-    descripcion: '(Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem voluptatem placeat veritatis, saepe laudantium ipsum accusantium beatae nesciunt vel cum quas, doloribus dolores illo facilis ipsa nulla? Fugiat, dolorem?)',
-    año: '(2004 - 2010)',
+    nombre: 'Ayudante de cátedra/ Profesor Invitado Nivel Universitario',
+    descripcion: 'Durante mi formación académica de grado y post-grado dicté diversas clases referentes a mi especialidad.',
+    año: '(2002 - 2010)',
 }];
 
 const expLab3 = [{
-    nombre: 'Experiencia 3',
-    descripcion: '(Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem voluptatem placeat veritatis, saepe laudantium ipsum accusantium beatae nesciunt vel cum quas, doloribus dolores illo facilis ipsa nulla? Fugiat, dolorem?)',
-    año: '(2012 al presente)'
+    nombre: 'Ayudante de Investigación / Co-Investigador',
+    descripcion: 'Durante mi formación académica participé de diversas investigaciones como asistente técnico y formé parte de equipo de investigación de proyectos',
+    año: '(2004 -2012)'
 }];
 
 let tableBodyExp1 = document.getElementById('tbodyExp1');
@@ -93,19 +93,44 @@ for (let i = 0; i < expLab3.length; i++) {
 //Info Primer modal//
 
 const masInfo1 = [{
-        nombre: 'Profesora de nivel Secundario de  Ciencias Naturales y afines',
-        descripcion: '(Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem voluptatem placeat veritatis, saepe laudantium ipsum accusantium beatae nesciunt vel cum quas, doloribus dolores illo facilis ipsa nulla? Fugiat, dolorem?)',
-        año: '(2012 al presente)'
+        nombre: 'Biotecnología (4° Año)',
+        descripcion: 'Escuela Experimental ProA Colonia Caroya. Colonia Caroya- Córdoba, Argentina',
+        año: '(2022 al presente)'
     },
     {
-        nombre: 'Asistente de Investigación',
-        descripcion: '(Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem voluptatem placeat veritatis, saepe laudantium ipsum accusantium beatae nesciunt vel cum quas, doloribus dolores illo facilis ipsa nulla? Fugiat, dolorem?)',
-        año: '(2004 - 2010)'
+        nombre: 'Club Escolar de Ciencias y Tecnologías (4° Año)',
+        descripcion: 'Escuela Experimental ProA Colonia Caroya. Colonia Caroya- Córdoba, Argentina',
+        año: '(2022 al presente)'
     },
     {
-        nombre: 'Experiencia 3',
-        descripcion: '(Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem voluptatem placeat veritatis, saepe laudantium ipsum accusantium beatae nesciunt vel cum quas, doloribus dolores illo facilis ipsa nulla? Fugiat, dolorem?)',
-        año: '(2012 al presente)'
+        nombre: 'Química (1°,2°y 3° Año)',
+        descripcion: 'Escuela Experimental ProA Colonia Caroya. Colonia Caroya- Córdoba, Argentina',
+        año: '(2019 al presente)'
+    },
+    {
+        nombre: 'Ciencias Naturales-Química (2° Año)',
+        descripcion: 'IPEM N° 349 “Giovanni Bosco”. Colonia Caroya- Córdoba, Argentina',
+        año: '(2019 al presente)'
+    },
+    {
+        nombre: 'Ciencias Naturales (1° a 6° Año)',
+        descripcion: 'IPEM N° 294 “Jesús María”- Anexo Santa Catalina. Santa Catalina- Córdoba, Argentina',
+        año: '(2017 al presente)'
+    },
+    {
+        nombre: 'Biotecnología (6° Año)',
+        descripcion: 'IPEM N° 349 “Giovanni Bosco”. Colonia Caroya- Córdoba, Argentina',
+        año: '(2014 -2022)'
+    },
+    {
+        nombre: 'Física (5° Año)',
+        descripcion: 'IPEM N° 367“Ascochinga” Anexo Canteras “El Sauce”. El Sauce- Córdoba, Argentina',
+        año: '(2018 -2019)'
+    },
+    {
+        nombre: 'Química (2° y 6° Año) y Física (3°, 4° y 5° Año)',
+        descripcion: 'Asociación Educativa “Pio León”. Colonia Caroya- Córdoba, Argentina',
+        año: '(2014 -2017)'
     }
 ]
 
@@ -122,19 +147,19 @@ for (let i = 0; i < masInfo1.length; i++) {
 
 //Info 2do Modal
 const masInfo2 = [{
-        nombre: 'Profesora de nivel Secundario de  Ciencias Naturales y afines',
-        descripcion: '(Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem voluptatem placeat veritatis, saepe laudantium ipsum accusantium beatae nesciunt vel cum quas, doloribus dolores illo facilis ipsa nulla? Fugiat, dolorem?)',
-        año: '(2012 al presente)'
+        nombre: 'Profesor invitado',
+        descripcion: 'Clase sobre Intermareales Rocosos. Curso de Mapeo Expeditivo. Universidad Nacional de la Patagonia “San Juan Bosco”.  Puerto Madryn- Chubut, Argentina',
+        año: '(2010)'
     },
     {
-        nombre: 'Asistente de Investigación',
-        descripcion: '(Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem voluptatem placeat veritatis, saepe laudantium ipsum accusantium beatae nesciunt vel cum quas, doloribus dolores illo facilis ipsa nulla? Fugiat, dolorem?)',
-        año: '(2004 - 2010)'
+        nombre: 'Ayudante docente',
+        descripcion: 'Curso -	Principios de Ecología y medio Ambiente (BIO143M).  Pontificia Universidad Católica de Chile. Santiago de Chile, Chile',
+        año: '(2004 - 2005)'
     },
     {
-        nombre: 'Experiencia 3',
-        descripcion: '(Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem voluptatem placeat veritatis, saepe laudantium ipsum accusantium beatae nesciunt vel cum quas, doloribus dolores illo facilis ipsa nulla? Fugiat, dolorem?)',
-        año: '(2012 al presente)'
+        nombre: 'Auxiliar de Segunda Ad Honorem',
+        descripcion: '-	Cátedra de Zoología general. UNP San Juan Bosco, sede Puerto Madryn, Chubut, Argentina',
+        año: '(2002 - 2003)'
     }
 ]
 
@@ -150,17 +175,17 @@ for (let i = 0; i < masInfo2.length; i++) {
 
 //Info 3er Modal
 const masInfo3 = [{
-        nombre: 'Profesora de nivel Secundario de  Ciencias Naturales y afines',
+        nombre: 'Co-Investigador',
         descripcion: '(Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem voluptatem placeat veritatis, saepe laudantium ipsum accusantium beatae nesciunt vel cum quas, doloribus dolores illo facilis ipsa nulla? Fugiat, dolorem?)',
         año: '(2012 al presente)'
     },
     {
-        nombre: 'Asistente de Investigación',
+        nombre: 'Asistente de Investigación 1',
         descripcion: '(Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem voluptatem placeat veritatis, saepe laudantium ipsum accusantium beatae nesciunt vel cum quas, doloribus dolores illo facilis ipsa nulla? Fugiat, dolorem?)',
         año: '(2004 - 2010)'
     },
     {
-        nombre: 'Experiencia 3',
+        nombre: 'Asistente de Investigación 2',
         descripcion: '(Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem voluptatem placeat veritatis, saepe laudantium ipsum accusantium beatae nesciunt vel cum quas, doloribus dolores illo facilis ipsa nulla? Fugiat, dolorem?)',
         año: '(2012 al presente)'
     }
@@ -202,7 +227,7 @@ close_modals.forEach((btn) => {
 window.onclick = (event) => {
     if (event.target == overlay) {
         const modals = document.querySelectorAll(".modal");
-        /* modals.forEach((modal) => modal.classList.remove("active"));
-         overlay.classList.remove("active");*/
+        modals.forEach((modal) => modal.classList.remove("active"));
+        overlay.classList.remove("active");
     }
 };
