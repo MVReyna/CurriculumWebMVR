@@ -50,8 +50,8 @@ const expLab2 = [{
 
 const expLab3 = [{
     nombre: 'Ayudante de Investigación / Co-Investigador',
-    descripcion: 'Durante mi formación académica participé de diversas investigaciones como asistente técnico y formé parte de equipo de investigación de proyectos',
-    año: '(2004 -2012)'
+    descripcion: 'Durante mi formación académica participé de diversas investigaciones como asistente técnico y coordiné tareas de algunos proyectos',
+    año: '(2004 -2011)'
 }];
 
 let tableBodyExp1 = document.getElementById('tbodyExp1');
@@ -138,9 +138,9 @@ const masInfo1 = [{
 let modal_body1 = document.getElementById('masInfo1');
 
 for (let i = 0; i < masInfo1.length; i++) {
-    let name = `<td>${masInfo1[i].nombre}</td>`;
-    let description = `<td>${masInfo1[i].descripcion}</td>`;
-    let year = `<td>${masInfo1[i].año}</td>`;
+    let name = `<td><h6>${masInfo1[i].nombre}</h6></td>`;
+    let description = `<td><p>${masInfo1[i].descripcion}</p></td>`;
+    let year = `<td><h6>${masInfo1[i].año}</h6></td>`;
 
     modal_body1.innerHTML += `<tr>${name + description + year}</tr>`;
 };
@@ -166,37 +166,47 @@ const masInfo2 = [{
 let modal_body2 = document.getElementById('masInfo2');
 
 for (let i = 0; i < masInfo2.length; i++) {
-    let name = `<td>${masInfo2[i].nombre}</td>`;
-    let description = `<td>${masInfo2[i].descripcion}</td>`;
-    let year = `<td>${masInfo2[i].año}</td>`;
+    let name = `<td><h6>${masInfo2[i].nombre}</h6></td>`;
+    let description = `<td><p>${masInfo2[i].descripcion}</p></td>`;
+    let year = `<td></h6>${masInfo2[i].año}</h6></td>`;
 
     modal_body2.innerHTML += `<tr>${name + description + year}</tr>`;
 };
 
 //Info 3er Modal
 const masInfo3 = [{
-        nombre: 'Co-Investigador',
-        descripcion: '(Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem voluptatem placeat veritatis, saepe laudantium ipsum accusantium beatae nesciunt vel cum quas, doloribus dolores illo facilis ipsa nulla? Fugiat, dolorem?)',
-        año: '(2012 al presente)'
+        nombre: 'Co-Investigador Proyecto “Biodiversidad Intermareal Patagónica”',
+        descripcion: 'A cargo del Dr. Pedro Barón, Dr. Augusto Crespi y Lic. María Victoria Reyna. Centro Nacional de la Patagonia, Puerto Madryn, Chubut, Argentina. Financiado por Asociación Doradillo Velas- Planète Urgence. Tarea realizada/ Dirigidas: Análisis y Composición de Playas arenosas y rocosas.',
+        año: '(2010 - 2011)'
     },
     {
-        nombre: 'Asistente de Investigación 1',
-        descripcion: '(Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem voluptatem placeat veritatis, saepe laudantium ipsum accusantium beatae nesciunt vel cum quas, doloribus dolores illo facilis ipsa nulla? Fugiat, dolorem?)',
-        año: '(2004 - 2010)'
+        nombre: 'Asistente de investigación Proyecto “Conexiones energéticas entre ecosistemas marinos y terrestres: variaciones espacio temporales de pequeña y gran escala en el uso de recursos intermareales por parte del reptil Microlophus atacamensis (SQUAMATA TROPIDURIDAE)”',
+        descripcion: 'A cargo del Dr. José Miguel Fariña. Pontificia Universidad Católica, Chile. Financiado por FONDECYT 1040784/2004. Tarea realizada/ Dirigidas Análisis y composición de  suelo en playas e islas del Pacífico chileno.',
+        año: '(2004 - 2006)'
     },
     {
-        nombre: 'Asistente de Investigación 2',
-        descripcion: '(Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo exercitationem voluptatem placeat veritatis, saepe laudantium ipsum accusantium beatae nesciunt vel cum quas, doloribus dolores illo facilis ipsa nulla? Fugiat, dolorem?)',
-        año: '(2012 al presente)'
+        nombre: 'Asistente de Investigación Proyecto “Efectos de la competencia, estrés ambiental y herbivoría en los patrones de zonación del ensamble de plantas presentes en el Humedal Costero de El Yali, V Región, Chile”.',
+        descripcion: 'A cargo del Dr. José Miguel Fariña. Pontificia Universidad Católica de Chile, Chile. Tarea realizada/ Dirigidas: Análisis y composición de  suelo de humedales  chileno.',
+        año: '(2004 - 2006)'
+    },
+    {
+        nombre: 'Asistente de Investigación Proyecto “Estructuras de comunidades de los intermareales rocosos de Bahía Camarones”',
+        descripcion: 'A cargo del Dr. José María (Lobo) Orensanz, Centro Nacional Patagónico, Puerto Madryn, Chubut, y Dr. Mark Bertness, Brown University, Providence.  Financiado por  The Andrew Mellon Foundation. Tarea realizada/ Dirigidas Análisis y composición de intermareales rocosos de la Patagonia Argentina',
+        año: '(2002 - 2004)'
+    },
+    {
+        nombre: 'Ayudante de Laboratorio: Colección de poliquetos. Proyecto "A Biota of Two Worlds-Unraveling Biodiversity Riddles and Addressing the Rationales for Marine Conservation in a Unique Geographic Scenario”',
+        descripcion: 'A cargo del Dr. Juan C. Castilla y  Dr. J.M. (Lobo) Orensanz,Centro Nacional Patagónico, Puerto Madryn, Chubut. Pew Collaborative Initiatives Fund.Tarea realizada/ Dirigidas Análisis y conservación de muestras de colección',
+        año: '(2002)'
     }
 ]
 
 let modal_body3 = document.getElementById('masInfo3');
 
 for (let i = 0; i < masInfo3.length; i++) {
-    let name = `<td>${masInfo3[i].nombre}</td>`;
-    let description = `<td>${masInfo3[i].descripcion}</td>`;
-    let year = `<td>${masInfo3[i].año}</td>`;
+    let name = `<td><h6>${masInfo3[i].nombre}</h6></td>`;
+    let description = `<td><p>${masInfo3[i].descripcion}</p></td>`;
+    let year = `<td><h6>${masInfo3[i].año}</h6></td>`;
 
     modal_body3.innerHTML += `<tr>${name + description + year}</tr>`;
 };
@@ -205,13 +215,12 @@ for (let i = 0; i < masInfo3.length; i++) {
 
 const btns = document.querySelectorAll("[data-target]");
 const close_modals = document.querySelectorAll(".close-modal");
-const overlay = document.getElementById("overlay");
+/*const overlay = document.getElementById("overlay");*/
 
 btns.forEach((btn) => {
     btn.addEventListener("click", () => {
         document.querySelector(btn.dataset.target).classList.add("active");
-        overlay.classList.add("active");
-        console.log("Abre la ventana modal");
+        /*overlay.classList.add("active");*/
     });
 });
 
@@ -219,8 +228,7 @@ close_modals.forEach((btn) => {
     btn.addEventListener("click", () => {
         const modal = btn.closest(".modal");
         modal.classList.remove("active");
-        overlay.classList.remove("active");
-        console.log("Cierra la ventana modal");
+        /*overlay.classList.remove("active");*/
     });
 });
 
@@ -228,6 +236,6 @@ window.onclick = (event) => {
     if (event.target == overlay) {
         const modals = document.querySelectorAll(".modal");
         modals.forEach((modal) => modal.classList.remove("active"));
-        overlay.classList.remove("active");
+        /*  overlay.classList.remove("active");*/
     }
 };

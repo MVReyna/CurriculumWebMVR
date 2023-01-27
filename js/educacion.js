@@ -55,7 +55,7 @@ const curso = [{
 let tableBodyB = document.getElementById('tbodyB');
 
 for (let i = 0; i < curso.length; i++) {
-    let name = `<td><h6>${curso[i].nombre}</h6></td>`;
+    let name = `<td><h5>${curso[i].nombre}</h5></td>`;
     let description = `<td><p>${curso[i].descripcion}</p></td>`;
     let year = `<td><h6>${curso[i].año}</h6></td>`;
 
