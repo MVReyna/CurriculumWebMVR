@@ -61,6 +61,3 @@ for (let i = 0; i < curso.length; i++) {
 
     tableBodyB.innerHTML += `<tr>${name + description + year}</tr>`;
 }
-
-console.log(educ);
-console.log(curso);

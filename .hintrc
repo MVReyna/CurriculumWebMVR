@@ -29,6 +29,12 @@
           "backdrop-filter"
         ]
       }
+    ],
+    "axe/aria": [
+      "default",
+      {
+        "aria-progressbar-name": "off"
+      }
     ]
   }
 }
